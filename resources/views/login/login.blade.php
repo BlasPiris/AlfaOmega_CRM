@@ -19,7 +19,7 @@ background-image: url('https://www.transparenttextures.com/patterns/45-degree-fa
                   />
                   
                 </div>
-                <form method="POST" action="{{route('check-login')}}">
+                <form name="form" method="POST" action="{{route('check-login')}}">
                   @csrf 
                   <p class="mb-4 text-center">Por favor, introduzca sus credenciales</p>
                   <div class="mb-4">
@@ -56,8 +56,16 @@ background-image: url('https://www.transparenttextures.com/patterns/45-degree-fa
                     >
                      Acceder
                     </button>
+
+                    @if ($errors->any())
+                    <h1 class="mt-2 text-red-500">Usuario o/y contraseña incorrectos</h1>
+                    @else
+                    <h1 class="mt-2 text-red-500 invisible">Usuario o/y contraseña incorrectos</h1>
+                    @endif
                     {{-- <a class="text-gray-500" href="#!">Ha olvidado su contraseña?</a> --}}
-                  </div>
+                    
+                   </div>
+                  
                   {{-- <div class="flex items-center justify-between pb-6">
                     <p class="mb-0 mr-2">Don't have an account?</p>
                     <button

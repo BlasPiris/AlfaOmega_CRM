@@ -38,7 +38,8 @@ class LoginController extends Controller
         $request->session()->regenerate();
             return redirect()->intended(route('dashboard'));
         }else{
-            return redirect(route('login'));
+            return redirect()->back()->withErrors(['form' => 'Error login']
+            );
         }
     }
 

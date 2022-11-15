@@ -26,5 +26,6 @@ Route::view('/dashboard', 'dashboard/dashboard')->middleware('auth')->name('dash
 Route::view('/', 'dashboard/dashboard')->middleware('auth')->name('dashboard');
 
 
+
 Route::post('/check-login',[LoginController::class,'login'])->name('check-login');
 Route::get('/logout',[LoginController::class,'logout'])->name('logout');

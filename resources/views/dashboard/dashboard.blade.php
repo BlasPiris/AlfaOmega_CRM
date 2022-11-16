@@ -4,10 +4,12 @@
 
     <!-- Aside -->
     @include("dashboard/asideDashboard") 
-    <div class="w-full h-full flex flex-col justify-between">
+    <div class="  white-bg w-full h-full flex flex-col justify-between">
       <!-- Header -->
       @include("dashboard/headerDashboard") 
-      <main class="max-w-full h-full flex relative overflow-y-hidden">
+      @include("dashboard/searchOptionsDashboard") 
+      <main class="max-w-full h-full flex relative overflow-y-hidden white-bg">
+        
         <!-- Container -->
         @include("dashboard/contentDashboard") 
       </main>

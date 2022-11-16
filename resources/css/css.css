@@ -1,0 +1,40 @@
+
+.primary-bg{
+background:  #a58c40;
+}
+
+.primary-bg:hover{
+    background:  #a58c40d8;
+}
+
+.secondary-bg{
+    background:  hwb(145 6% 49%);
+    }
+    
+.secondary-bg:hover{
+    background:   hwb(145 6% 49% / 0.808);
+}
+
+.white-bg{
+    background: #ebeaea;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

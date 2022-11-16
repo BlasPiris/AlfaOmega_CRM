@@ -3,11 +3,11 @@
 
 
   <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-white 
-   0 font-medium  text-sm px-4 py-1 text-center inline-flex items-center 
-   dark:hover:bg-blue-700 dark:focus:ring-yellow-600  hover:bg-yellow-600 rounded-md " type="button">
+   0 font-medium  text-sm px-1 py-1 text-center inline-flex items-center 
+   primary-bg rounded-md " type="button">
     <div class="w-24 font-medium hidden sm:block " title="{{Auth::user()->user;}}">{{Auth::user()->user;}}
     </div>
-    <div class="h-10 w-10 rounded-full text-black cursor-pointer bg-gray-200 border-2 border-yellow-600 mx-2 text-center py-2 ">
+    <div class="h-10 w-10 rounded-full text-black cursor-pointer bg-gray-200 border-2 border-gray-600 mx-2 text-center py-2 ">
       {{ strtoupper(substr(Auth::user()->user, 0, 1));}} </div>
   </button>
 

@@ -1,18 +1,20 @@
 
 .primary-bg{
-background:  #a58c40;
+
+background:  #a58c40d8;
 }
 
 .primary-bg:hover{
-    background:  #a58c40d8;
+  background:  #a58c40;
 }
 
 .secondary-bg{
-    background:  hwb(145 6% 49%);
+  background:   hwb(145 6% 49% / 0.808);
+    
     }
     
 .secondary-bg:hover{
-    background:   hwb(145 6% 49% / 0.808);
+  background:  hwb(145 6% 49%);
 }
 
 .white-bg{
@@ -37,4 +39,15 @@ background:  #a58c40;
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+  }
+
+
+  * {
+    user-select: none;
+  }
+  *::selection {
+    background: none;
+  }
+  *::-moz-selection {
+    background: none;
   }

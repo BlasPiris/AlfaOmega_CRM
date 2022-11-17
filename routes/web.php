@@ -23,6 +23,7 @@ Auth::routes();
 
 Route::view('/login', 'login/login')->name('login');
 Route::view('/dashboard', 'dashboard/dashboard')->middleware('auth')->name('dashboard');
+Route::view('/menu', 'menu/menu')->middleware('auth')->name('menu');
 Route::view('/', 'dashboard/dashboard')->middleware('auth')->name('dashboard');
 
 

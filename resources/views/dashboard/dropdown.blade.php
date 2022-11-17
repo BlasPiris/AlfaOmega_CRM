@@ -7,7 +7,7 @@
    primary-bg rounded-md " type="button">
     <div class="w-24 font-medium hidden sm:block " title="{{Auth::user()->user;}}">{{Auth::user()->user;}}
     </div>
-    <div class="h-10 w-10 rounded-full text-black cursor-pointer bg-gray-200 border-2 border-gray-600 mx-2 text-center py-2 ">
+    <div class="h-10 w-10 rounded-full text-black cursor-pointer bg-white border-2 border-gray-600 mx-2 text-center py-2 ">
       {{ strtoupper(substr(Auth::user()->user, 0, 1));}} </div>
   </button>
 
@@ -21,7 +21,7 @@
         <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
       </li>
       <li>
-        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Configuración</a>
+        <a href="{{route('menu')}}" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Configuración</a>
       </li>
       <li>
         <a href="{{route('logout')}}" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Salir</a>

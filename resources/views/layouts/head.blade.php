@@ -7,5 +7,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
   @vite('resources/css/app.css')
   @vite('resources/css/css.css')
+  @vite('resources/js/js.js')
   
 </head>
